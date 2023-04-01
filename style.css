@@ -1,0 +1,97 @@
+/*✅❌*/
+
+/* 
+✅background color for whole document
+✅font family for whole document
+✅color for all text
+✅margin 0 so all elements in body touch the right and left edge of the screen, the top of the screen if it's the top element, and no spaces between elements
+*/
+
+body {
+    background-color: rgb(54, 43, 59);
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color:rgb(250, 255, 184);
+    margin: 0;
+}
+
+/*
+✅background color for the whole header banner
+❌display: flex
+✅justify h1 and nav to be on opposite sides of screen
+❌align-items: center
+*/
+
+header {
+    background-color:rgb(120, 26, 163);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+✅ background color 
+*/
+
+#mainTitle {
+    background-color: rgba(255, 65, 246, 0.24);
+    font-size: 15px;
+    width: 300px;
+    text-align: end;
+    padding-right: 1rem;
+}
+
+nav {
+   width: 500px;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+li{
+    display: inline;
+    margin-right: 5%;
+}
+
+#subtitleBanner {
+    display: flex;
+    background-color: rgba(255, 65, 246, 0.24);
+    height: 150px;
+}
+
+#subtitle {
+    background-color:rgba(255, 65, 246, 0.24);
+    width: 300px;
+}
+
+main{
+    display: flex;
+    background-color:rgb(120, 26, 163);
+    flex-wrap: wrap;
+}
+
+.mainSection{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.mainHeading{
+    display: flex; 
+    background-color:rgb(120, 26, 163);
+    flex-wrap: wrap;
+    flex: 0 0 20%;
+}
+
+.mainContent{
+    display: flex; 
+    background-color:rgb(120, 26, 163);
+    flex-wrap: wrap;
+    flex: 1 1 80%;
+}
+
+@media screen and (max-width: /*decide width*/) {
+    /* need to make elements rearrange somehow...*/
+}
