@@ -55,6 +55,7 @@ nav {
 
 ul {
     list-style-type: none;
+    width: 100%;
 }
 
 li{
@@ -83,7 +84,6 @@ li{
 
 main{
     display: flex;
-
     flex-wrap: wrap;
 }
 
