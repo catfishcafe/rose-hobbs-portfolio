@@ -7,46 +7,54 @@
 ✅margin 0 so all elements in body touch the right and left edge of the screen, the top of the screen if it's the top element, and no spaces between elements
 */
 
+:root {
+    --medColorOne: #640088;
+    --darkColor: #222;
+    --lightColor: #fff59a;
+    --medColorTwo: #FF8600;
+}
+
 body {
-    background-color: rgb(54, 43, 59);
+    background-color: var(--darkColor);
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    color:rgb(250, 255, 184);
+    color: var(--lightColor);
     margin: 0;
 }
 
 /*
 ✅background color for the whole header banner
-❌display: flex
+❌display: flex: it's making the margin go away and making the justify thing work but I don't know why
 ✅justify h1 and nav to be on opposite sides of screen
-❌align-items: center
+✅items, particularly the nav options, are centered vertically
 */
 
 header {
-    background-color:rgb(120, 26, 163);
+    background-image: linear-gradient(to right, var(--medColorOne), var(--darkColor));
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: relative;
+    height: 100px;
 }
 
-/*
-✅ background color 
-*/
-
 #mainTitle {
-    background-color: rgba(255, 65, 246, 0.24);
+    background-color: var(--lightColor);
+    color: var(--darkColor);
     font-size: 15px;
     width: 300px;
     text-align: end;
-    padding-right: 1rem;
+    padding-right: 5%;
+    position: absolute;
+    left: 0;
 }
 
 nav {
    width: 500px;
+   position: absolute;
+   right: 0;
 }
 
 ul {
     list-style-type: none;
-    
 }
 
 li{
@@ -56,18 +64,26 @@ li{
 
 #subtitleBanner {
     display: flex;
-    background-color: rgba(255, 65, 246, 0.24);
+    background-image: url("assets/banner.png");
+    background-color: var(--medColorOne);
     height: 150px;
+    position: relative;
+    align-items: center;
 }
 
 #subtitle {
-    background-color:rgba(255, 65, 246, 0.24);
-    width: 300px;
+    background-color:var(--medColorOne);
+    width: fit-content;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 main{
     display: flex;
-    background-color:rgb(120, 26, 163);
+
     flex-wrap: wrap;
 }
 
@@ -80,16 +96,43 @@ main{
 
 .mainHeading{
     display: flex; 
-    background-color:rgb(120, 26, 163);
     flex-wrap: wrap;
     flex: 0 0 20%;
+    justify-content:right;
+    background-image: linear-gradient(to right, var(--medColorOne), var(--darkColor));
+}
+
+h3{
+    font-size: 150%;
+    padding-right: 10%;
 }
 
 .mainContent{
     display: flex; 
-    background-color:rgb(120, 26, 163);
     flex-wrap: wrap;
     flex: 1 1 80%;
+}
+
+.firstExample{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    flex-direction: column;
+}
+
+.projectExample{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    flex-direction: column;
+}
+
+img{
+    margin: .5rem;
+}
+
+#contactContent{
+    flex-wrap:nowrap;
 }
 
 @media screen and (max-width: /*decide width*/) {
