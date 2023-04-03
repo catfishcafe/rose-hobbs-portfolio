@@ -53,6 +53,11 @@ li{
     border-bottom-style: solid;
 }
 
+li a{
+    color: var(--lightColor);
+    text-decoration: none;
+}
+
 #subtitleBanner {
     display: flex;
     background-image: linear-gradient(to right, var(--darkColor), 70%, var(--medColorTwo) 100%);
