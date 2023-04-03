@@ -1,32 +1,18 @@
 /*✅❌*/
 
-/* 
-✅background color for whole document
-✅font family for whole document
-✅color for all text
-✅margin 0 so all elements in body touch the right and left edge of the screen, the top of the screen if it's the top element, and no spaces between elements
-*/
-
 :root {
     --medColorOne: #640088;
     --darkColor: #222;
     --lightColor: #fff59a;
-    --medColorTwo: #FF8600;
+    --medColorTwo: rgb(153, 42, 153);
 }
 
 body {
-    background-color: var(--darkColor);
+    background-image: linear-gradient(to right, var(--medColorOne), 4%, var(--darkColor));
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     color: var(--lightColor);
     margin: 0;
 }
-
-/*
-✅background color for the whole header banner
-❌display: flex: it's making the margin go away and making the justify thing work but I don't know why
-✅justify h1 and nav to be on opposite sides of screen
-✅items, particularly the nav options, are centered vertically
-*/
 
 header {
     background-image: linear-gradient(to right, var(--medColorOne), var(--darkColor));
@@ -47,6 +33,11 @@ header {
     left: 0;
 }
 
+h1{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 nav {
    width: 500px;
    position: absolute;
@@ -61,19 +52,25 @@ ul {
 li{
     display: inline;
     margin-right: 5%;
+    border-bottom-style: solid;
 }
 
 #subtitleBanner {
     display: flex;
-    background-image: url("assets/banner.png");
-    background-color: var(--medColorOne);
+    background-image: linear-gradient(to right, var(--darkColor), 70%, var(--medColorTwo) 100%);
+    background-color: var(--medColorTwo);
     height: 150px;
     position: relative;
-    align-items: center;
+}
+
+#profilePic {
+    position: absolute;
+    left: 4%;
+    top: 5%;
 }
 
 #subtitle {
-    background-color:var(--medColorOne);
+    background-color: var(--darkColor);
     width: fit-content;
     position: absolute;
     right: 5%;
@@ -82,9 +79,15 @@ li{
     padding-right: 2%;
 }
 
+h2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 2%;
 }
 
 .mainSection{
@@ -95,46 +98,73 @@ main{
 }
 
 .mainHeading{
-    display: flex; 
-    flex-wrap: wrap;
-    flex: 0 0 20%;
+    display: flex;
+    flex: 1 1 18%;
     justify-content:right;
-    background-image: linear-gradient(to right, var(--medColorOne), var(--darkColor));
+    background: none;
+    border-right-style:solid;
+    margin-top: 2%;
 }
 
 h3{
-    font-size: 150%;
+    font-size: 200%;
     padding-right: 10%;
 }
 
 .mainContent{
     display: flex; 
     flex-wrap: wrap;
-    flex: 1 1 80%;
+    flex: 0 0 75%;
+    margin-top: 2%;
+    margin-left: 1%;
 }
 
-.firstExample{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 100%;
-    flex-direction: column;
+.projectExample:first-child {
+    flex: 0 0 100%;
+    max-width: 820px;
 }
 
 .projectExample{
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 50%;
+    flex: 0 0 400px;
     flex-direction: column;
+    margin: 10px;
+    background-color: var(--medColorTwo);
+    position: relative;
 }
 
-img{
-    margin: .5rem;
+.projectExample img{
+    padding: 5px;
+    height: 100%;
+}
+
+.projectName{
+    position:absolute;
+    left:0;
+    bottom:10%;
+    padding-right:10px;
+    padding-left:10px;
+    background-color: var(--medColorTwo);
+}
+
+.main-header {
+    justify-content: space-between;
+    padding: 60px;
+    background: #13293d;
+    color: #fff;
+  }
+
+h4{
+    padding:0;
+    margin:0;
+    font-size: 150%;
 }
 
 #contactContent{
-    flex-wrap:nowrap;
+    align-items: center;
 }
 
-@media screen and (max-width: /*decide width*/) {
+@media screen and (max-width: ) {
     /* need to make elements rearrange somehow...*/
 }
