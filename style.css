@@ -20,7 +20,7 @@ header {
     height: 100px;
 }
 
-#mainTitle {
+#headerTitle {
     background-color: var(--lightColor);
     color: var(--darkColor);
     font-size: 15px;
@@ -37,7 +37,7 @@ h1{
 }
 
 nav {
-   width: 500px;
+   width:400px;
    position: absolute;
    right: 0;
 }
@@ -96,7 +96,6 @@ main{
 .mainSection{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     width: 100%;
 }
 
@@ -128,9 +127,8 @@ h3{
 }
 
 .projectExample{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 400px;
+    flex: 0 0 50%;
+    max-width: 400px;
     flex-direction: column;
     margin: 10px;
     background-color: var(--medColorOne);
@@ -178,6 +176,86 @@ h4{
     align-items: center;
 }
 
-@media screen and (max-width: ) {
-    /* need to make elements rearrange somehow...*/
+/*🔽 Responsive media queries start below here 🔽*/
+
+/*🔽 These have to do with the header and subtitle div 🔽*/
+
+@media screen and (max-width: 1000px) {
+    #headerTitle{
+        display: none;
+    }
 }
+
+@media screen and (max-width: 1000px) {
+    h2{
+        flex-wrap: wrap;
+        max-width: 235px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h2:before{
+        content: "Rose A. M. Hobbs ";
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        justify-content: right;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    nav{
+        position:static;
+    }
+}
+
+/*🔼 These (above) have to do with the header and subtitle div 🔼*/
+
+/*🔽 These (below) have to do with the main section 🔽*/
+
+@media screen and (max-width: 768px) {
+    .mainHeading{
+        display: flex;
+        flex: 1 1 100%;
+        justify-content:left;
+        border-right-style: none;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h3{
+        border-bottom-style:solid;
+        padding-right:0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContent{
+        display: flex; 
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        margin-top: 2%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .projectExample{
+        margin-left:0;
+        flex: 0 0 100%;
+    }
+}
+
+/*768px and 365px are the widths at which I
+need things to change*/
