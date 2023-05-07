@@ -122,7 +122,7 @@ h3{
 }
 
 .projectExample:first-child {
-    flex: 0 0 100%;
+    flex: 100%;
     max-width: 820px;
 }
 
@@ -169,7 +169,7 @@ h4{
     padding: 60px;
     background: #13293d;
     color: #fff;
-  }
+}
 
 
 #contactContent{
@@ -250,11 +250,22 @@ h4{
     }
 }
 
-@media screen and (max-width: 768px) { 
+/* @media screen and (max-width: 768px) { 
     .projectExample{
         margin-left:0;
         flex: 0 0 100%;
     }
+} 
+
+
+
+.projectExample{
+    flex: 0 0 48%;
+    max-width: 400px;
+    flex-direction: column;
+    margin: 1%;
+    background-color: var(--medColorOne);
+    position: relative;
 } */
 
 /*768px and 365px are the widths at which I
