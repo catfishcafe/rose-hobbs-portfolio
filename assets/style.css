@@ -256,13 +256,13 @@ h4{
         justify-content:left;
         border-right-style: none;
         margin-top: 2%;
-        margin-left: 5%;
+        border-top-style:solid;
     }
 }
 
 @media screen and (max-width: 768px) {
     h3{
-        border-bottom-style:solid;
+        margin-left: 5%;
         padding-right:0;
     }
 }
