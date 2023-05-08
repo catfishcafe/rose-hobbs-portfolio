@@ -66,10 +66,10 @@ li a{
     position: relative;
 }
 
-#profilePic {
+#profilePic img{
     position: absolute;
-    left: 4%;
-    top: 5%;
+    width: 150px;
+    left: 5%;
 }
 
 #subtitle {
@@ -208,6 +208,40 @@ h4{
 @media screen and (max-width: 1000px) {
     nav{
         position:static;
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+    #subtitleBanner {
+        display: flex;
+        background-image: none;
+        background-color: var(--darkColor);
+        height: 100px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #profilePic img {
+        position: absolute;
+        width: 100px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #subtitle {
+        right: 0;
+        bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 353px) {
+    #profilePic img {
+        display: none;
     }
 }
 
