@@ -67,6 +67,8 @@ li a{
 }
 
 #profilePic img{
+    outline: 1px solid  #640088;
+    outline-offset: -4px;
     position: absolute;
     width: 150px;
     left: 5%;
@@ -136,7 +138,8 @@ h3{
 }
 
 .projectExample img{
-    /* border-style: solid; */
+    outline: 4px solid var(--lightColor);
+    outline-offset: -4px;
     border-color: var(--lightColor);
     height: 100%;
     width: 100%;
