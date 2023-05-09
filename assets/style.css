@@ -38,14 +38,13 @@ h1{
 }
 
 nav {
-   width:400px;
-   position: absolute;
-   right: 0;
+    position: absolute;
+    right: 0;
 }
 
 ul {
     list-style-type: none;
-    width: 100%;
+    width: 300px;
 }
 
 li{
@@ -180,38 +179,31 @@ h4{
 
 /*🔽 These have to do with the header and subtitle div 🔽*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     #headerTitle{
         display: none;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     h2{
         flex-wrap: wrap;
         max-width: 235px;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     h2:before{
         content: "Rose A. M. Hobbs ";
         font-size: 120%;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     header{
         justify-content: right;
     }
 }
-
-@media screen and (max-width: 1000px) {
-    nav{
-        position:static;
-    }
-}
-
 
 @media screen and (max-width: 475px) {
     #subtitleBanner {
@@ -297,15 +289,3 @@ h4{
         flex: 0 0 100%;
     }
 }
-
-/*.projectExample{
-    flex: 0 0 48%;
-    max-width: 400px;
-    flex-direction: column;
-    margin: 1%;
-    background-color: var(--medColorOne);
-    position: relative;
-} */
-
-/*768px and 365px are the widths at which I
-need things to change*/
