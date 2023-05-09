@@ -44,6 +44,9 @@ nav {
 
 ul {
     list-style-type: none;
+}
+
+nav ul{
     width: 300px;
 }
 
@@ -173,14 +176,23 @@ h4{
     color: #fff;
 }
 
-
 #contactContent{
     align-items: center;
+}
+
+#contactContent ul{
+    width: 100%;
 }
 
 /*🔽 Responsive media queries start below here 🔽*/
 
 /*🔽 These have to do with the header and subtitle div 🔽*/
+
+@media screen and (max-width: 365px) {
+    nav ul{
+        width: auto;
+    }
+}
 
 @media screen and (max-width: 768px) {
     #headerTitle{
